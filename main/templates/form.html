@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'image/palette.png' %}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>My Color Type</title>
+</head>
+<body>
+    <section id="survey">
+        <div class="wrapper">
+            <form id="form" action="/result/" method="post">
+                {% csrf_token %}
+                {% for question in questions %}
+                    <div class="test">
+                        <div class="question_container">
+                            <h3 class="number">{{ question.number }}/{{ questions.count }}</h3>
+                            <h3 class="question">{{ question.content }}</h3>
+                        </div>
+                        <div class="answer">
+                          {% for choice in question.choice_set.all %}
+                            <div>
+                              <input
+                                type="radio"
+                                name="question-{{ question.number }}"
+                                id="choice-{{ choice.pk }}"
+                                value="{{ choice.type.pk }}"
+                              />
+                              <label for="choice-{{ choice.pk }}">{{ forloop.counter }}. {{ choice.content }}</label>
+                            </div>
+                          {% endfor %}
+                        </div>
+                        {% if not forloop.first %}
+                        <div class="btn_wrap btn_sort">
+                        {% else %}
+                        <div class="btn_wrap">
+                        {% endif %}
+                        {% if not forloop.first %}
+                            <button class="prev_btn">이전</button>
+                        {% endif %}
+                        {% if not forloop.last %}
+                            <button class="next_btn">다음</button>
+                        {% else %}
+                            <input type="submit" value="제출" class="submit_btn"/>
+                        {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="{% static 'js/form.js' %}"></script>
+</body>
+</html>

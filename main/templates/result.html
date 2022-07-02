@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="My Color Type" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="나의 색깔 유형은 무엇일까?" />
+    <title>My Color Type</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'image/palette.png' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <section id="main_contents">
+        <div class="wrapper">
+            <div class="result">
+                <div class="titles">
+                    <h3>당신의 색깔 유형은</h3>
+                    <h1 class="color{{ color.pk }}">{{ color.name }}</h1>
+                </div>
+                <div class="result_img">
+                    <img src="{% static 'image/' %}{{ color.pk }}.png" alt="{{ color.name }}">
+                </div>
+            </div>
+            <div class="result_explains">
+                <div class="explain">
+                    <div class="title">
+                        나의 성격은?!
+                    </div>
+                    <ul>
+                        <li>{{ color.personality1 }}</li>
+                        <li>{{ color.personality2 }}</li>
+                        <li>{{ color.personality3 }}</li>
+                        <li>{{ color.personality4 }}</li>
+                        <li>{{ color.personality5 }}</li>
+                        <li>{{ color.personality6 }}</li>
+                        <li>{{ color.personality7 }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="url">
+                    <button class="copy_btn" type="button">URL 복사하기</button>
+                </div>
+                <a href="/">
+                    <button type="button">테스트 다시 하기</button>
+                </a>
+            </div>
+            <div id="made">
+                made by Nahyun
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="{% static 'js/result.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Bohyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Bohyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+    color:#000;
+    font-family: "Bohyun";
+}
+
+button{
+    font-family: "Bohyun";
+    font-size: 35px;
+    width: 400px;
+    height: 50px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+#main_contents{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+#main_contents .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    padding-bottom: 50px
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.result h1{
+    font-size: 60px;
+    font-family: 'Bohyun';
+    padding-bottom: 15px;
+}
+
+.result h3{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.result_img{
+    width: 300px;
+    height: 300px;
+}
+
+.result_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.result_explains{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.result_explains .explain{
+    width: 400px;
+}
+
+.result_explains .title{
+    font-family: 'Bohyun';
+    font-size: 35px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.result_explains ul{
+    padding: 0 20px;
+    list-style-type: disc;
+}
+
+.result_explains li{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.buttons{
+    padding-bottom: 50px;
+}
+
+.buttons h3{
+    padding-bottom: 20px;
+}
+
+.buttons button{
+    margin-bottom: 10px;
+}
+
+
+#made{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+.color1{
+    color: red;
+}
+
+.color2{
+    color: rgb(255, 47, 0);
+}
+
+.color3{
+    color: rgb(255, 115, 0);
+}
+
+.color4{
+    color: rgb(255, 166, 93);
+}
+
+.color5{
+    color: rgb(255, 204, 0);
+}
+
+.color6{
+    color: rgb(136, 255, 0);
+}
+
+.color7{
+    color: rgb(52, 148, 0);
+}
+
+.color8{
+    color: rgb(0, 148, 143);
+}
+
+.color9{
+    color: rgb(5, 220, 227);
+}
+
+.color10{
+    color: rgb(0, 108, 202);
+}
+
+.color11{
+    color: rgb(0, 2, 121);
+}
+
+.color12{
+    color: rgb(88, 0, 220);
+}
+
+.color13{
+    color: rgb(169, 0, 220);
+}
+
+.color14{
+    color: rgb(255, 63, 226);
+}
+
+.color15{
+    color: rgb(135, 81, 0);
+}
+
+.color16{
+    color: rgb(151, 151, 151);
+}
