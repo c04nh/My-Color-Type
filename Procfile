@@ -1,0 +1,1 @@
+web: gunicorn MyColorType.wsgi --log-file -
