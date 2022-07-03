@@ -14,7 +14,7 @@ body{
 button{
     font-family: "Bohyun";
     font-size: 35px;
-    width: 400px;
+    width: 404px;
     height: 50px;
     border-style: none;
     border-radius: 5px;
@@ -53,13 +53,13 @@ button:hover{
 }
 
 .result h1{
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Bohyun';
     padding-bottom: 15px;
 }
 
 .result h3{
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 15px;
 }
 
@@ -89,7 +89,7 @@ button:hover{
 
 .result_explains .title{
     font-family: 'Bohyun';
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -104,7 +104,7 @@ button:hover{
 
 .result_explains li{
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .buttons{

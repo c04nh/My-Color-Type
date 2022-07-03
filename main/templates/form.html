@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/question.css' %}">
     <link rel="icon" type="image/x-icon" href="{% static 'image/palette.png?v=2' %}">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>My Color Type</title>
@@ -30,7 +30,7 @@
                                 id="choice-{{ choice.pk }}"
                                 value="{{ choice.type.pk }}"
                               />
-                              <label for="choice-{{ choice.pk }}">{{ forloop.counter }}. {{ choice.content }}</label>
+                              <label for="choice-{{ choice.pk }}">{{ choice.content }}</label>
                             </div>
                           {% endfor %}
                         </div>

@@ -89,11 +89,12 @@ body{
 
 .title{
     text-align: center;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .main_title{
-    font-size: 80px;
+    font-size: 90px;
     padding-bottom: 15px;
 }
 
@@ -108,7 +109,7 @@ body{
 }
 
 .type{
-    font-size: 40px;
+    font-size: 45px;
     line-height: 3em;
     height: 3em;
     overflow: hidden;
@@ -124,12 +125,12 @@ body{
 }
 
 .button button{
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 60px;
     padding: 5px;
     border-style: none;
     border-radius: 10px;
-    font-size: 35px;
+    font-size: 45px;
     background-color: black;
     color: white;
     cursor: pointer;
@@ -145,30 +146,10 @@ body{
     justify-content: center;
 }
 
-.result_data .data_wrap{
-    width: 270px;
-    padding: 15px;
-    border-top:3px solid #000;
-    border-bottom: 3px solid #000;
-    line-height: 1.5;
-    margin-bottom: 50px;
-}
-
-.result_data h3{
-    text-align: center;
-    font-size: 35px;
-    padding: 20px 0 30px;
-}
-
-.result_data li{
-    font-size: 30px;
-    padding-bottom: 20px;
-}
-
 #made{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-top: 50px;
     font-size: 30px;
 }
 
