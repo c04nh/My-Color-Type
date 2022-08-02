@@ -11,7 +11,7 @@
 Python, CSS, JavaScript, Django로 구현
 <br>
 <br>
-
+          
 ### pip list
 - asgiref           3.5.2
 - Django            3.2.13
