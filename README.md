@@ -8,7 +8,7 @@
 테스트 다시하기 버튼을 누르면 시작 페이지로 돌아옵니다. 
 
 --- 
-Python, CSS, JavaScript, Django로 구현
+Python, HTML, CSS, JavaScript, Django로 구현
 <br>
 <br>
           
